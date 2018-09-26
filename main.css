@@ -1,0 +1,13 @@
+body {
+  background-color: #fff6bb;
+}
+
+body .aa {
+  color: #fff000;
+}
+
+@media (min-width: 840px) {
+  body {
+    background-color: #005dff;
+  }
+}

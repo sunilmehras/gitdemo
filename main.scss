@@ -1,0 +1,31 @@
+$bgColor : #fff000;
+
+$colors: (
+    primary: #005dff,
+    accent: #fff6bb
+);
+
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@function color($prm){
+    @return map-get($colors, $prm)
+}
+
+body {
+    background-color: color(accent);
+    .aa {
+        color:$bgColor;
+        
+        
+    }
+    @include desktop {
+        background-color: color(primary);
+    }
+}
+
